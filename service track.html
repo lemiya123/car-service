@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Service Tracker</title>
+  <link rel="stylesheet" href="style.csss">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Car Service Tracker</h1>
+    </header>
+
+    <div class="service-details">
+      <h2>Service Tracking</h2>
+      
+      <div class="car-info">
+        <p><strong>Car:</strong> Toyota Corolla</p>
+        <p><strong>Service:</strong> Oil Change</p>
+        <p><strong>Booking ID:</strong> #123456</p>
+      </div>
+
+      <div class="status">
+        <h3>Status: <span id="status">In Progress</span></h3>
+        <div class="progress-bar">
+          <div id="progress" class="progress"></div>
+        </div>
+        <p>Estimated Completion: <strong>30 mins</strong></p>
+      </div>
+
+      <div class="tracking-info">
+        <h3>Current Location:</h3>
+        <p>The car is currently being serviced at the station.</p>
+      </div>
+
+      <button id="update-status"><a href="./tracking.html">Update Status</a></button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

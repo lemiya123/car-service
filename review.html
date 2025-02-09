@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Service Review</title>
+  <link rel="stylesheet" href="stylessss.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Car Service Review</h1>
+      <p>We'd love to hear your feedback!</p>
+    </header>
+
+    <div class="review-form">
+      <h2>Leave a Review</h2>
+      <form action="#" method="POST">
+        <div class="rating-group">
+          <label for="rating">Rating:</label>
+          <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">★</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">★</label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">★</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">★</label>
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">★</label>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="review-text">Your Review:</label>
+          <textarea id="review-text" name="review-text" rows="4" placeholder="Write your experience here..." required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Review</button>
+      </form>
+    </div>
+
+    <div class="reviews">
+      <h2>Recent Reviews</h2>
+      <div class="review">
+        <div class="rating">★★★★☆</div>
+        <p class="review-text">Great service! My car was fixed quickly and the staff was friendly.</p>
+      </div>
+      <div class="review">
+        <div class="rating">★★★☆☆</div>
+        <p class="review-text">Decent service, but it took longer than expected. Would use again.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Your Payment</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+
+</head>
+<body>
+    <div class="payment-container">
+        <h1>Complete Your Payment</h1>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="payment-form">
+            <!-- Command to specify the type of payment -->
+            <input type="hidden" name="cmd" value="_xclick">
+
+            <!-- Your PayPal business email -->
+            <input type="hidden" name="business" value="your-paypal-email@example.com">
+
+            <!-- Item name -->
+            <input type="hidden" name="item_name" value="Car Service">
+
+            <!-- Item number (optional) -->
+            <input type="hidden" name="item_number" value="12345">
+
+            <!-- Item price -->
+            <input type="hidden" name="amount" value="100.00">
+
+            <!-- Currency code -->
+            <input type="hidden" name="currency_code" value="USD">
+
+            <!-- Return URL after successful payment -->
+            <input type="hidden" name="return" value="http://www.yoursite.com/thank_you.html">
+
+            <!-- Cancel URL if the user cancels the payment -->
+            <input type="hidden" name="cancel_return" value="http://www.yoursite.com/cancel.html">
+
+            <!-- PayPal button image -->
+            <input type="image" name="submit" border="0" src="https://www.paypal.com/en_US/i/btn/btn_buynow_LG.gif" alt="PayPal - The safer, easier way to pay online">
+        </form>
+    </div>
+</body>
+</html>
+
